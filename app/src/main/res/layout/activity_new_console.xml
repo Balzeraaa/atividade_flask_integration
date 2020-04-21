@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15sp"
+    android:layout_marginTop="15sp"
+    android:layout_marginRight="15sp"
+    android:orientation="vertical"
+    tools:context=".activity.NewConsoleActivity">
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Console" />
+
+    <EditText
+        android:id="@+id/editYear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ano de Lançamento"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editPrice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Preço"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editGames"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jogos"
+        android:inputType="number" />
+
+    <CheckBox
+        android:id="@+id/editActive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:text="Ativo" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:onClick="saveConsole"
+        android:text="Salvar" />
+
+</LinearLayout>

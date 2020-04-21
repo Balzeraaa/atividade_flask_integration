@@ -1,0 +1,2 @@
+rootProject.name='flask_integration'
+include ':app'
